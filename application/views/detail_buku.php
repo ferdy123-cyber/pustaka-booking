@@ -1,4 +1,5 @@
 <div class="container" style="padding-bottom: 20px;">
+    <!-- <?php var_dump($kategori) ?> -->
     <div class="container_daftar_buku" style="text-align: center;">
         <img class="img_buku" src="<?php echo base_url() . 'assets/img/upload/' . $detailBuku[0]['image'] ?>" />
         <p style="padding: 0px 8px; margin-bottom: 5px; margin-top: 10px;" class="pengarang">
@@ -14,7 +15,7 @@
             <div class="col-6 row">
                 <p class="col-3" style="font-weight: 500; text-align: start;">Kategori </p>
                 <p class="col-9" style="font-weight: 300; text-align: start;">
-                    <?php echo $detailBuku[0]['id_kategori'] ?>
+                    <?php echo $kategori ?>
                 </p>
             </div>
             <div class="col-6 row">

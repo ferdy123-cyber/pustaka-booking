@@ -9,4 +9,8 @@ class ModelBuku extends CI_Model
     {
         return $this->db->get_where('buku', array('id' => $where));
     }
+    public function getKategori($where)
+    {
+        return $this->db->get_where('kategori', array('id' => $where));
+    }
 }

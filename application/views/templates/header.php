@@ -28,13 +28,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-0">
+                <ul class="navbar-nav mb-0">
                     <li class="nav-item">
                         <a href="<?php echo base_url() ?>" style="font-size: 16px; cursor: pointer;"
                             class="nav-link <?php echo $beranda ?>" aria-current="page">Beranda</a>
                     </li>
+                    <li class="nav-item <?php echo $daftar ?>">
+                        <a href="<?php echo base_url() . 'user' ?>" style="font-size: 16px; cursor: pointer;"
+                            class="nav-link <?php echo $daftar ?>">Daftar</a>
+                    </li>
                     <li class="nav-item">
-                        <a style="font-size: 16px; cursor: pointer;" class="nav-link">Login</a>
+                        <a href="<?php echo base_url() . 'user/login' ?>" style="font-size: 16px; cursor: pointer;"
+                            class="nav-link <?php echo $login ?>">Login</a>
                     </li>
                 </ul>
             </div>
